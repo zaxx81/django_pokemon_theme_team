@@ -1,0 +1,16 @@
+{% extends 'pages/layout.html' %}
+{% load static %}
+
+{% block title %}<title>Django Pokemon Theme Team</title>{% endblock title %}
+
+{% block content %}
+<div class="main-area">
+  <h1 class="title-text fw-bolder">Welcome to the<br>Pok&eacutemon Theme Team Maker!</h1>
+  <img src="{% static 'pages/images/game-logo.jpeg' %}" alt="Pokeman Logo" class="logo">
+  <div>
+    <a href="{% url 'team' %}"><input type="image" id="pokeball" alt="pokeball" src="{% static 'pages/images/pokeball.png' %}" width="96px" height="96px"></a>
+  </div>
+  <div class="subtitle-text">*Click on the Pok&eacute Ball to catch a Pok&eacutemon<br> and five other Pok&eacutemon of the same type.</div>
+  </div>
+</div>
+{% endblock content %}

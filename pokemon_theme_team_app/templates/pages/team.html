@@ -1,0 +1,77 @@
+{% extends 'pages/layout.html' %}
+{% load static %}
+
+{% block title %}<title>Meet Your Pokemon Team</title>{% endblock title %}
+
+{% block content %}
+<div class="main-area">
+  <h1 class="title-text fw-bolder">Meet Your Pok&eacutemon Team!</h1>
+  <br>
+  <div class="row row-cols-1 row-cols-md-5 g-4">
+    <div class="col">
+      <div class="card mx-auto h-100">
+        <img src="{% static 'pages/images/background.png' %}" class="card-img-top pokemon-img" alt="Pokemon #1">
+        <div class="card-body">
+          <h5 class="card-title">Pokemon Name</h5>
+          <p class="card-text">Pokemon Types (types go here)</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">&copy; 2022 Pokemon Team</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mx-auto h-100">
+        <img src="{% static 'pages/images/background.png' %}" class="card-img-top pokemon-img" alt="Pokemon #2">
+        <div class="card-body">
+          <h5 class="card-title">Pokemon Name</h5>
+          <p class="card-text">Pokemon Types (types go here)</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">&copy; 2022 Pokemon Team</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mx-auto h-100">
+        <img src="{% static 'pages/images/background.png' %}" class="card-img-top pokemon-img" alt="Pokemon #3">
+        <div class="card-body">
+          <h5 class="card-title">Pokemon Name</h5>
+          <p class="card-text">Pokemon Types (types go here)</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">&copy; 2022 Pokemon Team</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mx-auto h-100">
+        <img src="{% static 'pages/images/background.png' %}" class="card-img-top pokemon-img" alt="Pokemon #4">
+        <div class="card-body">
+          <h5 class="card-title">Pokemon Name</h5>
+          <p class="card-text">Pokemon Types (types go here)</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">&copy; 2022 Pokemon Team</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mx-auto h-100">
+        <img src="{% static 'pages/images/background.png' %}" class="card-img-top pokemon-img" alt="Pokemon #5">
+        <div class="card-body">
+          <h5 class="card-title">Pokemon Name</h5>
+          <p class="card-text">Pokemon Types (types go here)</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">&copy; 2022 Pokemon Team</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div>
+    <a class="btn btn-main_menu btn-lg" href="{% url 'home' %}" role="button">Main Menu</a>
+  </div>
+</div>
+{% endblock content %}
