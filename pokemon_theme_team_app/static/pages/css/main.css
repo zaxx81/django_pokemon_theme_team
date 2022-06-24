@@ -63,6 +63,11 @@ body {
   color: var(--pokemon-yellow);
 }
 
+.footer-txt {
+  font-family: 'Press Start 2P', cursive !important;
+  color: var(--pokemon-blue) !important;
+}
+
 .btn-main_menu {
   background-color: var(--pokemon-yellow) !important;
   color: var(--pokemon-blue) !important;

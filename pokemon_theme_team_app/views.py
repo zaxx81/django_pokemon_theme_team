@@ -8,4 +8,9 @@ def index(request):
 
 def team(request):
   Pokemon.getMon()
-  return render(request, "pages/team.html")
+  pokemon_list = Pokemon.pokemon_caught
+  my_data = {
+    "pokemons": pokemon_list,
+  }
+  # print(my_data['pokemon_caught'][0].name)
+  return render(request, "pages/team.html", my_data)
