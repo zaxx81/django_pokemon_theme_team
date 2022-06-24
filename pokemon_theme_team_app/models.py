@@ -18,18 +18,20 @@ class Pokemon(models.Model):
   ## Class Methods    
   # Determine the count for pokemon(endpoint)
   def getPokemonCount():
-    limit = '?limit=1'
-    pokemon_url = Pokemon.pokemon_endpoint+limit
-    response = requests.get(pokemon_url)
+    query_strings = {
+      'limit': '1'
+    }
+    response = requests.get(Pokemon.pokemon_endpoint, params=query_strings)
     responseJSON = response.json()
     Pokemon.pokemon_count = int(responseJSON['count'])
 
   
   # Get all pokemon(types) from pokemon(endpoint)
   def getPokemonData():
-    limit = f'?limit={Pokemon.pokemon_count}'
-    pokemon_url = Pokemon.pokemon_endpoint+limit
-    response = requests.get(pokemon_url)
+    query_strings = {
+      'limit': Pokemon.pokemon_count
+    }
+    response = requests.get(Pokemon.pokemon_endpoint, params=query_strings)
     responseJSON = response.json()
     Pokemon.pokemon_data = responseJSON['results']
 
