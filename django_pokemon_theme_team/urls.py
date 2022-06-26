@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    path('', include('pokemon_theme_team_app.urls')),
     path('admin/', admin.site.urls),
     path('pokemon/', include('pokemon_theme_team_app.urls') )
 ]

@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pokemon_theme_team_app',
+    'pokemon_theme_team_app.apps.PokemonThemeTeamAppConfig',
 ]
 
 MIDDLEWARE = [

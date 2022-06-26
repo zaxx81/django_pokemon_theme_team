@@ -63,7 +63,7 @@ body {
   color: var(--pokemon-yellow);
 }
 
-.footer-txt {
+.card-footer.card-custom {
   font-family: 'Press Start 2P', cursive !important;
   color: var(--pokemon-blue) !important;
 }
